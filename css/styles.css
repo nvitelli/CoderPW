@@ -1,0 +1,380 @@
+
+/*clase para aplicar a LISTAS sin viñetas ni numeros */
+.listaSinViñetas{
+    list-style: none
+}
+
+/*clase para aplicar un color especifico a una etiqueta*/
+.colorAzul{
+    color:cornflowerblue;
+}
+/*clase para aplicar un color especifico a un fondo*/
+body{
+    background-color:cornflowerblue;
+}
+
+/*clase para aplicar un tamaño grande a una fuente*/
+.fuenteGrande{
+    font-size: 50px;
+/*clase para aplicar un tamaño mediano a una fuente*/
+}
+.fuenteMediana{
+    font-size: 30px;
+}
+/*clase para aplicar un tamaño chico a una fuente*/
+.fuenteChica{
+    font-size: 18px;
+}
+/*clase para aplicar negrita a un texto*/
+.fuenteEnNegrita{
+    font-weight:bold;
+}
+/*clase para aplicar una familia de fuentes*/
+.fuenteExterna{
+    font-family: 'Courier New', Courier, monospace;
+}
+/*clase para IN-LINE en menu de navegacion, una lista LI es coloda de manera horizontal*/
+li{
+    display:inline-block;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 35px;
+}
+
+/*clase para aplicar interlineado a un parrafo*/
+.aplicarInterlineado{
+    line-height: 2px;
+}
+/*clase para aplicar formato a una etiqueta "a"*/
+a{
+    text-decoration: none;
+    color: beige;
+    font-family : 'tahoma';
+    font-size: 20px;
+    background-color: cornflowerblue;
+}
+
+/*Clase para aplicar estilo al cuadrante del titulo principal*/
+.estiloTituloPrincipal{
+    background-color: beige;
+    background-size: 80px;
+    height: 60px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+} 
+.estiloTituloSecundario{
+    background-color: beige;
+    background-size: 80px;
+    height: 23px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+} 
+
+.estiloTituloPrincipal background-image{
+    text-align: center;
+}
+
+/*Coloca una imagen e indica que no la misma no se repita a lo ancho de la pagina*/
+.colocarImagenFondoTitulo{
+    background-image:url("../img/LogoEmpresa/android-chrome-192x192.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+} 
+
+/*Coloca margen superior en cero*/
+.margenSuperiorEnCero{
+    margin-top: 0px;
+}
+.aplicarMargen{
+    margin: 10px;
+}
+
+/*Clase para centrar texto*/
+.centrarTexto{
+    text-align: center;
+}
+.TextoDerecha{
+    text-align: right;
+}
+.izquierdaTexto{
+    text-align:left
+}
+
+.card1{
+    width: 55%;
+    height: 310px;
+}
+
+.card1 img{
+    border-radius: 50px;
+    display:block;
+    margin:auto;
+    padding: 5px;
+    }
+
+.card1Servicios{
+    width: 55%;
+    height: 310px;
+}
+    
+.card1Servicios img{
+    border-radius: 50px;
+    display:block;
+    margin:auto;
+    padding:5px;
+    max-width:200px;
+}
+
+.cardCondicionesPago{
+    background-color: transparent;
+    width: 25%;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    border-width: 1px;
+    border-color: black;
+    grid-column: 1/4;
+}
+
+.cardCondicionesPagoIndex{
+    width: 25%;
+    height: 150px;
+}
+
+.cardCondicionesPago img{ 
+    width: 250px;
+    border-radius: 20px;
+    border-color: black;
+    display:block;
+    margin:auto;
+    justify-items: center;
+    }
+
+.cardCondicionesPagoIndex img{ 
+    width: 250px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.cardCondicionesPagoProductos{
+    background-color: transparent;
+    width: 25%;
+    height: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-width: 1px;
+    border-color: black;
+    grid-column: 1/6;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardCondicionesPagoProductos img{ 
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    border-color: black;
+    display:block;
+    margin:auto;
+    justify-items: center;
+}
+    
+.card1 button{
+    border-color:green;
+    border-start-start-radius: 20%;
+    border-end-end-radius: 20%;
+}
+
+.centrarImagen{
+    display:block;
+    margin:auto;
+}
+.fuenteGeneral{
+    font-family:Tahoma, sans-serif;
+    font-size: 15px;
+}
+.cardTitulo{
+    background-color:beige;
+    margin-top: 0px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    color:cornflowerblue;
+    }
+
+.aplicarFlexBox{
+    display :flex;
+}
+
+.aplicarflexBoxWrap{
+    flex-wrap: wrap;
+}
+
+#itemsRIGS{
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.ModificarMargenDerecho{
+    margin: 50px;
+}
+
+footer{
+    text-align: center;
+}
+
+.footerGrid{
+    display: grid;
+    grid-template-columns: 7;
+    grid-template-rows: 1;
+    text-align: center;
+}
+
+.grid {
+    display: grid;  
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 3fr 1fr; 
+    font-size: 25px;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+     "nav header header"
+     "nav productos publicidad"
+     "nav servicios publicidad"
+     "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 400px 400px 75px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    height: 100vh;
+    margin: 0;
+ }
+
+ /*.border {
+    border: 1px solid black;
+    background-color: beige;
+ }
+*/
+  .aplicarGridsindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items:center;
+ }
+
+
+.aplicarGridQuienesSomos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items:center;
+    gap:20px;
+    
+}
+.divFAQs{
+    background-color: beige;
+    padding: 10px;
+}
+
+.divFAQs:hover{
+    border: 1px solid blueviolet
+}
+
+.aplicarGridConvieneMinar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.griTextodCentrado{
+    justify-content: center;
+}
+.aplicarGridProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items:center;
+    gap:20px;
+}
+.aplicarGridContactanos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items:center;
+    gap:20px;
+
+}.alinearControlaGrid{
+    grid-column: 1/3;
+}
+.GridFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5px;
+    justify-items:left;
+ 
+}
+.imagenaDerecha{
+    justify-content: right;
+}
+
+
+/*.gridEjemplo1 {
+    display: grid;  
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(12, 1fr);  
+    background-color: antiquewhite;
+ }
+ */
+ #grilla {
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    
+ }
+ .border {
+    border: 1px solid beige;
+ }
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;    
+ }
+ section#servicios {
+    grid-area: servicios;     
+ }
+ nav {
+    grid-area: nav;
+ }
+ aside {
+    grid-area: publicidad;
+ }
+ 
+ .SectionProductosDirection{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ 
+.navDirection{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .aplicarMargenSuperioInferior{
+     margin-top: 35px;
+     margin-bottom: 35px;
+ }
