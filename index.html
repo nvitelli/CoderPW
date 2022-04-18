@@ -8,7 +8,7 @@
     <!--FAVICON-->
     <link rel="shortcut icon" href="img/Iconos Favicon/favicon.ico" type="image/x-icon">
     
-    <!--Declaracion de familia de Fonts-->
+    <!--DECLARACION DE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -19,95 +19,143 @@
 </head>
 
 <body id="grilla">
+
+    <!--ENCABEZADO-->
     <header class="border">
         <div class="centrartexto">
-            <h1 class="colorAzul fuenteGrande colocarImagenFondoTitulo estiloTituloPrincipal centrarTexto centrarImagen">TODO RIGS</h1>
+            <h1 class=" banner colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">RIGS CENTER</h1>
         </div>
-    </header>     
-        <nav class="border">
-            <ul class="navDirection" class="aplicarMargenSuperioInferior">
-                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
-                <li>
-                    <a href="pages/quienes-somos.html">QUIENES SOMOS?</a>
-                </li>
-                <li>
-                    <a href="pages/porque-minar.html">CONVIENE MINAR?</a>
-                </li>
-                <li>
-                    <a href="pages/productos.html">PRODUCTOS/SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="pages/calculo-consumo-rentabilidad.html">CALCULO DE RENTABILIDAD</a>
-                </li>
-                <li>
-                    <a href="pages/contactanos.html">CONTACTANOS</a>
-                </li>
-                <li>
-                    <a href="index.html">IR A INICIO</a>
-                </li>
-                <li>
-                    <a href="pages/grid-1.html">Grid ejemplo 1</a>
-                </li>
-            </ul>
-        </nav>
-    
+    </header>  
 
+    <!--MENU NAVEGACION-->
+    <nav class="border">
+        <div class = "logoColorFondo centrarImagenLogo">
+            <a href="index.html">
+                <img  class="logoColorFondo banner" src= "img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
+            </a>
+        </div>
+        <ul class="navDirection aplicarMargenSuperioInferior">
+            <li>
+                <button class="btnQuinesSomos"><a href="pages/quienes-somos.html">Quienes somos?</a></button>
+            </li>
+            <li>
+                <button class="btnQuinesSomos"><a href="pages/porque-minar.html">Conviene minar?</a></button>
+            </li>
+            <li>
+                <button class="btnQuinesSomos"><a href="pages/productos.html">Productos</a></button>
+            </li>
+            <li>
+                <button class="btnQuinesSomos"><a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
+            </li>
+            <li>
+                <button class="btnQuinesSomos"><a href="pages/contactanos.html">Contactanos</a></button>
+            </li>
+            <li>
+                <button class="btnQuinesSomos"><a href="index.html">Inicio</a></button>
+            </li>
+        </ul>
+    </nav>
     
-
-    <!--<section class="aplicarFlexBox aplicarflexBoxWrap" class id=itemsRIGS>-->
-    
-    <!--<section class="aplicarGridsindex">-->
-    <section id="productos" class="border">
-        <div class="aplicarFlexBox" class="SectionProductosDirection">
+    <!--SECCION PRODUCTOS-->
+    <section id="productos" class="border banner">
+        <h2 class="visibleNoVisible centrarTexto">Ofertas de la semana</h2>
+        <div class="aplicarFlexBox sectionProductosDirection">
             <div class="card1">
-                <img src="img/Seccion Productos/RIG2.jpg" alt="Imagen de RIG 1">
-                <p class="centrarTexto fuenteEnNegrita">RIG Modelo AKD2001 Precio $ 1.500.000</p>
-                <button>Agregar al carrito</button>
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Productos/RIG2.jpg" alt="Imagen de RIG 1">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2001 - $ 1.500.000</p>
+                
             </div>
-            <div class="card1">
-                <img src="img/Seccion Productos/RIG2.jpg" alt="Imagen de RIG 2">
-                <p class="centrarTexto fuenteEnNegrita">RIG Modelo AKD2001 Precio $ 1.800.000</p>
-                <button>Agregar al carrito</button>
+            <div class="card2">
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Productos/RIG1.jpg" alt="Imagen de RIG 2">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2014 - $ 1.800.000</p>
             </div> 
-            <div class="card1">
-                <img src="img/Seccion Productos/RIG2.jpg" alt="Imagen de RIG 3">
-                <p class="centrarTexto fuenteEnNegrita">RIG Modelo AKD2001 Precio $ 1.900.000</p>
-                <button>Agregar al carrito</button>
+            <div class="card3">
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Productos/RIG4.jpg" alt="Imagen de RIG 3">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2019 - $ 1.900.000</p>
             </div> 
-        </div>
-    </section>
-
-    <section id="servicios" class="border">
-        <!--Utilizo CARDS para aplicar BOx Modeling-->
-        <div class="aplicarFlexBox" class="SectionProductosDirection">
-            <div class="card1Servicios">
-                <img src="img/Seccion Servicios/team_people_work_icon_176863.png" alt="Imagen de RIG 1">
-                <p class="centrarTexto fuenteEnNegrita">Asesoramiento</p>
-                <button>Agregar al carrito</button>
-            </div>
-            <div class="card1Servicios">
-                <img src="img/Seccion Servicios/Admin.png" alt="Imagen de RIG 2">
-                <p class="centrarTexto fuenteEnNegrita">Administracion de RIG</p>
-                <button>Agregar al carrito</button>
-            </div> 
-            <div class="card1Servicios">
-                <img src="img/Seccion Servicios/3668839-gear-maintenance-service-technical_108029.png" alt="Imagen de RIG 3">
-                <p class="centrarTexto fuenteEnNegrita">Mantenimiento de RIG</p>
-                <button>Agregar al carrito</button>
-            </div> 
-        </div>
-    </section>
-    <aside class="border">
+        </div>        
         
+    </section>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios" class="border banner">
+        <h2 class="centrarTexto">Nuestros servicios</h2>
+        <div class="aplicarFlexBox sectionProductosDirection">  
+            <div class="card1Servicios">
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Index/advice.png" alt="Imagen de RIG 1">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Asesoramiento</p>
+            </div>
+            <div class="card1Servicios">
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Index/Mant.png" alt="Imagen de RIG 2">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Administracion de RIG</p>
+            </div> 
+            <div class="card1Servicios">
+                <a href="pages/contactanos.html">
+                    <img src="img/Seccion Index/maintanance.jpg" alt="Imagen de RIG 3">
+                </a>
+                <p class="centrarTexto fuenteEnNegrita">Mantenimiento de RIG</p>
+            </div> 
+        </div>
+    </section>
+
+    <aside class="border banner">
+        <ul class="aplicarFlexBox navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+            <h3>
+                Actualidad
+            </h3>
+            <li>
+                <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+            </li>
+            <li>
+                <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+            </li>
+            <li>
+                <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+            </li>
+            <li>
+                <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+            </li>
+            <li>
+                <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+            </li>
+            <li>
+                <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+            </li>
+        </ul>
     </aside>
-    <footer class="border">
-        <a href="https://www.facebook.com/" target="_blank"><img src="img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-        <a href="https://web.whatsapp.com//" target="_blank"><img src="img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-        <a href="https://www.Instagram.com/" target="_blank"><img src="img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-        <a href="https://www.Twitter.com/" target="_blank"><img src="img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-        <a href="Contactanos.html"><img src="img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
-        <a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>
+
+    <!--FOOTER-->
+    <footer class="border banner">
+        <div class="aplicarFlexBox SectionFooter">
+            <div>
+                <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                <a href="https://web.whatsapp.com//" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                <a href="https://www.Instagram.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                <a href="https://www.Twitter.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                <a href="pages/contactanos.html"><img class="hoverImagen" src="img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+            </div>
+            <div>
+                <p class="fuenteEnNegrita">Ubicanos en</p>
+            </div>
+            <div>
+                <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
+                <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
+                
+            </div>
     </footer>
  
 </body>

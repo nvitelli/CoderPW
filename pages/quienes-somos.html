@@ -3,14 +3,14 @@
     
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--FAVICON-->
-        <link rel="shortcut icon" href="../img/Iconos Favicon/favicon.ico" type="image/x-icon">
-        <!--Declaracion familia de Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/Iconos Favicon/favicon.ico" type="image/x-icon">
+        <!--DECLARACION DE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <!--Declaracion de CSS-->
         <link rel="stylesheet" href="../css/styles.css">
         <!--TITULO del sitio-->
@@ -18,100 +18,187 @@
     </head>
     
     <body>
-    
-        <header>
-            <div class="centrartexto">
-                <h1 class="colorAzul fuenteGrande colocarImagenFondoTitulo estiloTituloPrincipal centrarTexto fuenteEnNegrita centrarImagen">QUIENES SOMOS?</h1>
-            </div>
-        </header>     
-    
-        <nav>
-            <ul>
-                <li>
-                    <a class="a" href="quienes-somos.html">QUIENES SOMOS?</a>
-                </li>
-                <li>
-                    <a class="a" href="porque-minar.html">CONVIENE MINAR?</a>
-                </li>
-                <li>
-                    <a class="a" href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a class="a" href="calculo-consumo-rentabilidad.html">CALCULO DE RENTABILIDAD</a>
-                </li>
-                <li>
-                    <a class="a" href="Contactanos.html">CONTACTANOS</a>
-                </li>
-                <li>
-                    <a class="a" href="../index.html">IR AL INICIO</a>
-                </li>
-            </ul>
-        </nav>
-       
-        <p class="colorAzul fuenteChica estiloTituloSecundario centrarTexto margenSuperiorEnCero">
-            Somos una empresa pionera en Argentina en la asesoría, implementación y venta de RIGs "llave en mano". 10 años de experiencia en el rubro nos avalan
-        </p>    
-        <h4 class="fuenteGeneral centrarTexto">
-            Te brindamos el mejor asesoramiento en la compra de un RIG, teniendo en cuenta la inversión a a realizar y el escenario de COSTO/BENEFICIO asociado.
-        </h4>
-        <!--GRILLA-->
 
-        <div class = "aplicarGridQuienesSomos">
-            <div class="divFAQs">
-                <h3 class="fuenteGeneral">
-                    Por que me conviene minar?
-                </h3>
-            </div>
-            <div class="divFAQs">
-                <h3 class="fuenteGeneral">
-                    Que costos debo tener en cuenta?
-                </h3>
-            </div>
-            <div class="divFAQs">
-                <h3 class="fuenteGeneral">
-                    Como calculo el costo total de inversión inicial y mensual?
-                </h3>
-            </div>
-            <div class="divFAQs hoverFAQs" >
-                <h3 class="fuenteGeneral">
-                    Cual es la rentabilidad que puedo alcanzar?
-                </h3>    
-            </div> 
-            <div class="divFAQs">
-                <h3 class="fuenteGeneral">
-                    Puedo calcular la rentabilidad mensual estimada?
-                </h3>
-            </div>   
-            <div class="divFAQs">
-                <h3 class="fuenteGeneral">
-                    Es una inversion de alto riesgo?
-                </h3>
-            </div>    
-        </div>
+        <body id="grilla">
+
+            <!--ENCABEZADO-->
+            <header class="border">
+                <div class="centrartexto">
+                    <h1 class="colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">Quienes somos?</h1>
+                </div>
+            </header>     
         
-        <h4 class="fuenteGeneral centrarTexto">
-            <a href="contactanos.html" >No dudes en realizar cualquier tipo de consulta</a>
-        </h4>
+            <!--MENU NAVEGACION-->
+            <nav class="border">
+                <div class = "centrarImagenLogo">
+                    <a href="../index.html">
+                        <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
+                    </a>
+                </div>
+                <ul class="navDirection aplicarMargenSuperioInferior">
+                    <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+                    <li>
+                        <!--<a href="pages/quienes-somos.html">Quienes somos?</a>-->
+                        <button class="btnQuinesSomos"><a href="quienes-somos.html">Quienes somos?</a></button>
+                    </li>
+                    <li>
+                        <!--<a href="pages/porque-minar.html">Conviene minar?</a>-->
+                        <button class="btnQuinesSomos"><a href="porque-minar.html">Conviene minar?</a></button>
+                    </li>
+                    <li>
+                       <!-- <a href="pages/productos.html">Productos</a>-->
+                        <button class="btnQuinesSomos"><a href="productos.html">Productos</a></button>
+                    </li>
+                    <li>
+                        <!--<a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>-->
+                        <button class="btnQuinesSomos"><a href="calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
+                    </li>
+                    <li>
+                        <!--<a href="pages/contactanos.html">Contactanos</a>-->
+                        <button class="btnQuinesSomos"><a href="contactanos.html">Contactanos</a></button>
+                    </li>
+                    <li>
+                        <!--<a href="pages/contactanos.html">Contactanos</a>-->
+                        <button class="btnQuinesSomos"><a href="../index.html">Inicio</a></button>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!--SECCION PRODUCTOS-->
+            <section id="productos" class="border">
+
+                <p class="banner colorAzul fuenteChica estiloTituloSecundario centrarTexto">
+                    Somos una empresa pionera en Argentina en la asesoría, implementación y venta de RIGs "llave en mano". 10 años de experiencia en el rubro nos avalan
+                </p>
+                <p class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">
+                     <!--<h4 class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">Hoy en día mucho se habla de las criptomonedas, sus fluctuaciones, ventajas y desventajas. Pero muy pocos saben realmente cómo se producen. </h4>-->
+                     Hoy en día mucho se habla de las criptomonedas, sus fluctuaciones, ventajas y desventajas. Pero muy pocos saben realmente cómo se producen.
+                </p>
+                <p class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">
+                    <!--<h4 class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">Todos hemos escuchado hablar en algún momento de la minería de criptomonedas. Pero… ¿A qué se refiere? ¿Qué es la minería de criptomonedas y qué usos tiene? </h4>-->
+                    Todos hemos escuchado hablar en algún momento de la minería de criptomonedas. Pero… ¿A qué se refiere? ¿Qué es la minería de criptomonedas y qué usos tiene?
+                </p>
+                <p class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">
+                    <!--<h4 class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">Saber esto nos puede ayudar tal vez a entender de mejor manera este nuevo mundo de inversión en activos digitales que cada vez gana más terreno adeptos. </h4>-->
+                    Saber esto nos puede ayudar tal vez a entender de mejor manera este nuevo mundo de inversión en activos digitales que cada vez gana más terreno adeptos.
+                </p>
+                <p class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">
+                    <!--<h4 class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo"> La minería de criptomonedas es el proceso en el que los mineros utilizan la potencia informática (hash), para procesar transacciones y obtener recompensas.</h4>-->
+                    La minería de criptomonedas es el proceso en el que los mineros utilizan la potencia informática (hash), para procesar transacciones y obtener recompensas.
+                </p>
+
+            </section>
         
-        <div class = "centrarTexto">
-            <a href="../index.html">
-                <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
-            </a>
-        </div>
-        <footer>
-            <div>
-                <h6>-SEGUINOS EN LAS REDES SOCIALES-</h6>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-                <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-                <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-                <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-                <a href="Contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
-                <a href="https://www.google.com.ar/maps/" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>
-            </div>
-        </footer>
+            <!--SECCION SERVICIOS-->
+            <section id="servicios" class="border">
+                
+                <div class = "aplicarGridQuienesSomos">
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/10024thinkingface_110034.png" alt="Imagen asociada a consulta Me conviene minar?">
+                            <p>Me conviene minar?</p>
+                        </h3>
+                    </div>
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/receipt_bill_invoice_price_payment_icon_187248.png" alt="Imagen asociada a consulta Que costos debo tener en cuenta?">
+                            <p>Que costos debo tener en cuenta?</p>
+                        </h3>
+                    </div>
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/Costoinversion.png" alt="Imagen asociada a consulta Cual es el costo de inversión?">
+                            <p>Cual es el costo de inversion?</p>
+                        </h3>
+                    </div>
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/analytics_chart_bars_graphic_finance_business_money_coin_icon_150732.png" alt="Imagen asociada a consulta Cual es la rentabilidad?">
+                            <p>Cual es la rentabilidad?</p>
+                        </h3>
+                    </div> 
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/iconfinder-websitemigration-4263524_117844.png" alt="Imagen asociada a consulta Puedo cambiar de moneda?">
+                            <p>Puedo cambiar de moneda?</p>
+                        </h3>
+                    </div> 
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/graph-decrease_icon-icons.com_53134.png" alt="Imagen asociada a consulta Es una inversión de alto riesgo?">
+                            <p>Es una inversión de alto riesgo?</p>
+                        </h3>
+                    </div> 
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/health-monitoring_115305.png" alt="Imagen asociada a consulta Puedo monitorear el equipo?">
+                            <p>Puedo monitorear el equipo?</p>
+                        </h3>
+                    </div> 
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/teacher_education_school_lecture_student_icon_141984.png" alt="Imagen asociada a consulta Me capacitan?">
+                            <p>Me capacitan?</p>
+                        </h3>
+                    </div> 
+                    <div class="centrarTexto">
+                        <h3 class="banner fuenteGeneral">
+                            <img src="../img/Seccion Quienes somos/customer-service_icon-icons.com_52843.png" alt="Tengo servicios post venta?">
+                            <p>Tengo servicios post venta?</p>
+                        </h3>
+                    </div> 
+                </div>
+            </section>
+            <aside class="border">
+                <ul class="navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+                    <h3 >Actualidad</h3>
+                    <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+                    <li>
+                        <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+                    </li>
+                    <li>
+                        <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+                    </li>
+                    <li>
+                        <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+                    </li>
+                    <li>
+                        <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+                    </li>
+                    <li>
+                        <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+                    </li>
+                </ul>
+                
+            </aside>
+        
+            <!--FOOTER-->
+            <footer class="border">
+                <div class="aplicarFlexBox SectionFooter">
+                    <div>
+                        <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                        <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                        <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                        <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                        <a href="pages/contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+                    </div>
+                    <div>
+                        <p class="fuenteEnNegrita">Ubicanos en</p>
+                    </div>
+                    <div>
+                        <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
+                        <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
+                        
+                    </div>
+            </footer>
+ 
     </body>
 
 </html>

@@ -18,72 +18,93 @@
         <title>Contactanos</title>
     </head>
     
-    <body>
-    
-        <header>
+    <body id="grilla">
+
+        <!--ENCABEZADO-->
+        <header class="border">
             <div class="centrartexto">
-                <h1 class="colorAzul fuenteGrande colocarImagenFondoTitulo estiloTituloPrincipal centrarTexto margenSuperiorEnCero centrarImagen">CONTACTANOS</h1>
+                <h1 class="colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">Contactanos</h1>
             </div>
-        </header>     
+        </header>       
     
-        <nav>
-            <ul>
+        <!--MENU NAVEGACION-->
+        <nav class="border">
+            <div class = "centrarImagenLogo">
+                <a href="../index.html">
+                    <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
+                </a>
+            </div>
+            <ul class="navDirection aplicarMargenSuperioInferior">
+                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
                 <li>
-                    <a class="a" href="quienes-somos.html" >QUIENES SOMOS?</a>
+                    <!--<a href="pages/quienes-somos.html">Quienes somos?</a>-->
+                    <button class="btnQuinesSomos"><a href="quienes-somos.html">Quienes somos?</a></button>
                 </li>
                 <li>
-                    <a class="a"href="porque-minar.html">CONVIENE MINAR?</a>
+                    <!--<a href="pages/porque-minar.html">Conviene minar?</a>-->
+                    <button class="btnQuinesSomos"><a href="porque-minar.html">Conviene minar?</a></button>
                 </li>
                 <li>
-                    <a class="a"href="productos.html">PRODUCTOS</a>
+                   <!-- <a href="pages/productos.html">Productos</a>-->
+                    <button class="btnQuinesSomos"><a href="productos.html">Productos</a></button>
                 </li>
                 <li>
-                    <a class="a"href="calculo-consumo-rentabilidad.html">CALCULO DE RENTABILIDAD</a>
+                    <!--<a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>-->
+                    <button class="btnQuinesSomos"><a href="calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
                 </li>
                 <li>
-                    <a class="a"href="Contactanos.html">CONTACTANOS</a>
+                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
+                    <button class="btnQuinesSomos"><a href="contactanos.html">Contactanos</a></button>
                 </li>
                 <li>
-                    <a class="a" href="../index.html">IR AL INICIO</a>
+                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
+                    <button class="btnQuinesSomos"><a href="../index.html">Inicio</a></button>
                 </li>
             </ul>
         </nav>
-       
-        <p class="colorAzul fuenteChica estiloTituloSecundario centrarTexto margenSuperiorEnCero">
-            Contactanos para realizarnos cualquie tipo de consulta. Podemos concretar una reunion por Zoom o presencial para asesorarte
-        </p>
 
-        <h2 >Ingresa tus datos para poder contactarte</h2>
-        
-        <!--Formulario para el ingreso de datos del cliente para poder contactarlo-->
-        <form class="aplicarGridContactanos">
-            <fieldset>
-                <legend>Como te ubicamos?</legend>
+          <!--SECCION PRODUCTOS-->
+          <section id="productos" class="border aplicarGridContactanos">
+
+            <!--<p class="colorAzul fuenteChica estiloTituloSecundario centrarTexto margenSuperiorEnCero">
+                Contactanos para realizarnos cualquie tipo de consulta. Podemos concretar una reunion por Zoom o presencial para asesorarte
+            </p>
+       
+    
+            <h2 >Ingresa tus datos para poder contactarte</h2>
+             -->
+            
+            <!--Formulario para el ingreso de datos del cliente para poder contactarlo-->
+            <form class="aplicarGridContactanos">
                 <div>
-                    <label for="apellido-nombre">Apellido y Nombre:</label>
-                    <input type="text" id="apellido-nombre" required placeholder="Dato obligatorio">
+                    <fieldset>
+                        <legend>Como te ubicamos?</legend>
+                        <div>
+                            <label for="apellido-nombre">Apellido y Nombre:</label>
+                            <input type="text" id="apellido-nombre" required placeholder="Dato obligatorio">
+                        </div>
+                        <div>
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" required placeholder="Dato obligatorio">
+                        </div>
+                        <div>
+                            <label for="e-mail">Email:</label>
+                            <input type="email" id="e-mail"required placeholder="Dato obligatorio">
+                        </div>
+                    </fieldset>
                 </div>
                 <div>
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" required placeholder="Dato obligatorio">
-                </div>
-                <div>
-                    <label for="e-mail">Email:</label>
-                    <input type="email" id="e-mail"required placeholder="Dato obligatorio">
-                </div>
-            </fieldset>
-            <div>
-                <fieldset>
+                    <fieldset>
                         <legend>Podemos chatearte previamente para coordinar el llamado?</legend>
                         <label for="si">Si</label>
                         <input type="radio" name="chat-si-no" id="si"
                         <label for="no">No</label>
                         <input type="radio" name="chat-si-no" id="no"
                     <fieldset>
-            </div>
-            <div>
-                <fieldset>
-                    <legend>Servicio/Producto deseado</legend>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Servicio/Producto deseado</legend>
                         <div>
                             <input type="checkbox" id=""
                             <label for="RIG-llave-en-mano">RIG llave en mano</label>
@@ -96,45 +117,89 @@
                             <input type="checkbox" id=""
                             <label for="Mantenimiento-de-RIG">Mantenimiento de RIG</label>
                         </div>
-                    
-                </fieldset>
-            </div>
-            <div>
-                <fieldset>
-                    <legend>Como nos conociste?</legend>
-                    <select name="" id="" selected>
-                        <option value="" selected></option>
-                        <option value="">Facebook</option>
-                        <option value="">Instagram</option>
-                        <option value="">Referencias</option>
-                        <option value="">Twitter</option>
-                    </select>
-                </fieldset>
-            </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Como nos conociste?</legend>
+                        <select name="" id="" selected>
+                            <option value="" selected></option>
+                            <option value="">Facebook</option>
+                            <option value="">Instagram</option>
+                            <option value="">Referencias</option>
+                            <option value="">Twitter</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+        </section>
+
+         <!--SECCION SERVICIOS-->
+         <section id="servicios" class="border">
             <div class="alinearControlaGrid">
-                <fieldset>
+                
                     <legend>Ingresa un comentario si deseas agregar algo mas</legend>
-                    <textarea name="" id="" cols="200" rows="10"></textarea>
-                </fieldset>
+                    <textarea name="" id="" cols="100" rows="10"></textarea>
+                
             <div>
             <div>
                 <input type="submit" value="Enviar solicitud">
                 <input type="reset" value="Borrar datos ingresados">
-            </div>
+            </div>    
+       
+        </section>
+
+        <aside class="border">
+            <ul class="navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+                <h3 >Actualidad</h3>
+                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+                <li>
+                    <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+                </li>
+                <li>
+                    <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+                </li>
+                <li>
+                    <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+                </li>
+                <li>
+                    <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+                </li>
+                <li>
+                    <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+                </li>
+                <li>
+                    <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+                </li>
+            </ul>
+            
+        </aside>
+       
+       
+          
         </form>
-        <footer>
-            <div>
-                <h6>-SEGUINOS EN LAS REDES SOCIALES-</h6>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-                <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-                <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-                <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-                <a href="Contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
-                <a href="https://www.google.com.ar/maps/" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>
-            </div>
+
+        <footer class="border">
+            <div class="aplicarFlexBox SectionFooter">
+                <div>
+                    <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                    <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                    <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                    <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                    <a href="pages/contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+                </div>
+                <div>
+                    <p class="fuenteEnNegrita">Ubicanos en</p>
+                </div>
+                <div>
+                    <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
+                    <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
+                    
+                </div>
         </footer>
 
     </body>
