@@ -78,6 +78,7 @@ a{
     height: 23px;
     margin-bottom: 30px;
     background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
 } 
 
 .estiloTituloPrincipal background-image{
@@ -280,7 +281,6 @@ footer{
     background-color: beige;
     padding: 10px;
 }
-
 .divFAQs:hover{
     border: 1px solid blueviolet
 }
@@ -299,7 +299,7 @@ footer{
 }
 .aplicarGridProductos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr1;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     justify-items:center;
@@ -320,7 +320,7 @@ footer{
     align-items: center;
 }
 
-}
+
 .aplicarGridContactanos{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -355,7 +355,7 @@ footer{
  .sectionProductosDirection{
     flex-direction:row;
     justify-content:space-evenly;
-    margin-top: 65px;
+    margin-top: 25px;
  }
 
  @media screen and (max-width: 767px) {
@@ -382,9 +382,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-top: 190px;
-    margin-bottom: 40px;
-
+    justify-content: center;
+    justify-items: center;
+    
  }
 
  @media screen and (max-width: 767px) {
@@ -398,7 +398,7 @@ footer{
 
  .navDirectionAside{
     flex-direction: column;
-    align-items:left;
+    align-items:center;
     margin-top: 300px;
     margin-bottom: 120px;
     padding-left: 20px;
@@ -436,8 +436,17 @@ button{
 .btnQuinesSomos{
     border-color:beige;
     transition: box-shadow 0.2s ease-in-out;
-    width: 200;
+    width: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
+
+.imgCarrusel{
+    width: 350px;
+    height: 250px;
+    border-radius: 20%;
+}
+
 
 .btnQuinesSomos:hover{
     box-shadow: 0 0 20px  beige inset;
