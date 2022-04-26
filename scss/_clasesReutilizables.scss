@@ -1,0 +1,62 @@
+.fuenteGrande{
+    font-size: 68px;
+}
+/*clase para aplicar un tamaño mediano a una fuente*/
+.fuenteMediana{
+    font-size: 30px;
+}
+/*clase para aplicar un tamaño chico a una fuente*/
+.fuenteChica{
+    font-size: 15px;
+    font-weight: bold;
+}
+/*clase para aplicar negrita a un texto*/
+.fuenteEnNegrita{
+    font-weight:bold;
+}
+li{
+    display:inline-block;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+/*clase para aplicar interlineado a un parrafo*/
+.aplicarInterlineado{
+    line-height: 2px;
+}
+/*Coloca margen superior en cero*/
+.margenSuperiorEnCero{
+    margin-top: 0px;
+}
+.TextoDerecha{
+    text-align: right;
+}
+.izquierdaTexto{
+    text-align:left
+}
+.centrarImagen{
+    display:block;
+    margin:auto;
+}
+.fuenteGeneral{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.aplicarFlexBox{
+    display :flex;
+}
+.aplicarFlexBoxRow{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.aplicarFlexDirectionHorizontal{
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.aplicarflexBoxWrap{
+    flex-wrap: wrap;
+}
+.aplicarMargenSuperioInferior{
+    margin-top: 1px;
+}
