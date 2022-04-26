@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <!--Declaracion de CSS-->
+        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
         <!--TITULO del sitio-->
         <title>Productos</title>
@@ -19,54 +20,54 @@
     
     <body id="grilla">
 
-        <!--ENCABEZADO-->
         <header class="border">
-            <div class="centrartexto">
-                <h1 class="colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">Rentabilidad</h1>
+            <div class="aplicarFlexBox aplicarFlexBoxRow">
+                <div>
+                    <a class="banner" href="../index.html"><img class="tamanioLogo" src="../img/LogoEmpresa/Log1.png" alt=""></a>
+                </div>
+                <div>
+                    <h1 class="banner colorBeige fuenteGrande estiloTituloPrincipal centrarTexto">Rentabilidad</h1>
+                </div>
             </div>
-        </header>         
+        </header>  
     
          <!--MENU NAVEGACION-->
-         <nav class="border">
-            <div class = "centrarImagenLogo">
-                <a href="../index.html">
-                    <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
-                </a>
-            </div>
-            <ul class="navDirection aplicarMargenSuperioInferior">
-                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+         <nav class="border navDirection">
+            <ul>
                 <li>
-                    <!--<a href="pages/quienes-somos.html">Quienes somos?</a>-->
-                    <button class="btnQuinesSomos"><a href="quienes-somos.html">Quienes somos?</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="quienes-somos.html">Quienes somos?</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/porque-minar.html">Conviene minar?</a>-->
-                    <button class="btnQuinesSomos"><a href="porque-minar.html">Conviene minar?</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="porque-minar.html">Conviene minar?</a>
+                    </div>
                 </li>
                 <li>
-                   <!-- <a href="pages/productos.html">Productos</a>-->
-                    <button class="btnQuinesSomos"><a href="productos.html">Productos</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="productos.html">Productos</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>-->
-                    <button class="btnQuinesSomos"><a href="calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="calculo-consumo-rentabilidad.html">Rentabilidad</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="contactanos.html">Contactanos</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="contactanos.html">Contactanos</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="../index.html">Inicio</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="../index.html">Inicio</a>
+                    </div>
                 </li>
             </ul>
         </nav>
        
-        <p class="colorAzul fuenteChica estiloTituloSecundario centrarTexto margenSuperiorEnCero">
-            Te asesoramos en la compra de un RIG, analizamos junto a vos los factores que inciden en el costo, y los beneficios económicos a lograr a partir de una tabla resumen con los principales factores a tener en cuenta
-        </p>
-
-         <!--SECCION PRODUCTOS-->
+        <!--SECCION PRODUCTOS-->
          <section id="productos" class="border aplicarGridRentabilidad">
             <p class="centrarTexto fuenteChica AplicarMargenSuperiorParrafo">
                  Puede determinarse la rentabilidad a obtener diariamente y en el corto y mediano plazo
@@ -85,59 +86,52 @@
           <!--SECCION SERVICIOS-->
         <section id="servicios" class="border aplicarGridRentabilidadContainner2">
             <div>
-                <img class="centrarImagen" src="../img/Seccion Calculo Rentabilidad/Img-Seccion-Calculo-Rentabilidad.jpg" alt = "Tabla de costos de RIGs y beneficios económicos"  title="Tabla de costos de RIGs y beneficios económicos">
+                <img class="centrarImagen tamanioImagenRentabilidad" src="../img/Seccion Calculo Rentabilidad/Img-Seccion-Calculo-Rentabilidad.jpg" alt = "Tabla de costos de RIGs y beneficios económicos"  title="Tabla de costos de RIGs y beneficios económicos">
             </div>
             <div class="centrarTexto">
                 <a href="contactanos.html" class="fuenteGeneral">Me interesa, por favor contactenme</a>
             </div>        
         </section>
         <aside class="border">
-            <ul class="navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+            <ul class="aplicarFlexBox navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
                 <p class="fuenteEnNegrita">Actualidad</p>
                 <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
                 <li>
-                    <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+                    <a class="divFAQs"  href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
                 </li>
                 <li>
-                    <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+                    <a class="divFAQs"  href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
                 </li>
                 <li>
-                    <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+                    <a class="divFAQs"  href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
                 </li>
                 <li>
-                    <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+                    <a class="divFAQs"  href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
                 </li>
                 <li>
-                    <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+                    <a class="divFAQs"  href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
                 </li>
                 <li>
-                    <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+                    <a class="divFAQs"  class="a"href="contactanos.html">Que te gustaría ver?</a>
                 </li>
             </ul>
             
         </aside>
 
-        <footer class="border">
-            <div class="aplicarFlexBox SectionFooter">
+        <footer class="border aplicarFlexBox SectionFooter">
+            <div >
                 <div>
-                    <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+                    <p>Seguinos en las redes sociales</p>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-                    <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-                    <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-                    <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-                    <a href="pages/contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                    <a href="https://web.whatsapp.com//" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                    <a href="https://www.Instagram.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                    <a href="https://www.Twitter.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                    <a href="pages/contactanos.html"><img class="hoverImagen" src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
                 </div>
-                <div>
-                    <p class="fuenteEnNegrita">Ubicanos en</p>
-                </div>
-                <div>
-                    <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
-                    <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
-                    
-                </div>
+            </div>
         </footer>
     </body>
 

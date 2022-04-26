@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@220;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <!--Declaracion de CSS-->
+        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
         <!--TITULO del sitio-->
         <title>Contactanos</title>
@@ -19,130 +20,128 @@
     
     <body id="grilla">
 
-        <!--ENCABEZADO-->
-        <header class="border">
-            <div class="centrartexto">
-                <h1 class="colorAzul fuenteGrande estiloTituloPrincipal centrarTexto">Conviene minar?</h1>
+    <!--ENCABEZADO-->
+    <header class="border">
+        <div class="aplicarFlexBox aplicarFlexBoxRow">
+            <div>
+                <a class="banner" href="../index.html"><img class="tamanioLogo" src="../img/LogoEmpresa/Log1.png" alt=""></a>
             </div>
-        </header>     
-        
-        <!--MENU NAVEGACION-->
-        <nav class="border">
-            <div class = "centrarImagenLogo">
-                <a href="../index.html">
-                    <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
-                </a>
+            <div>
+                <h1 class="banner colorBeige fuenteGrande estiloTituloPrincipal centrarTexto">Conviene minar?</h1>
             </div>
-            <ul class="navDirection aplicarMargenSuperioInferior">
-                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
-                <li>
-                    <!--<a href="pages/quienes-somos.html">Quienes somos?</a>-->
-                    <button class="btnQuinesSomos"><a href="quienes-somos.html">Quienes somos?</a></button>
-                </li>
-                <li>
-                    <!--<a href="pages/porque-minar.html">Conviene minar?</a>-->
-                    <button class="btnQuinesSomos"><a href="porque-minar.html">Conviene minar?</a></button>
-                </li>
-                <li>
-                    <!-- <a href="pages/productos.html">Productos</a>-->
-                    <button class="btnQuinesSomos"><a href="productos.html">Productos</a></button>
-                </li>
-                <li>
-                    <!--<a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>-->
-                    <button class="btnQuinesSomos"><a href="calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
-                </li>
-                <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="contactanos.html">Contactanos</a></button>
-                </li>
-                <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="../index.html">Inicio</a></button>
-                </li>
-            </ul>
-        </nav>
+        </div>
+    </header>              
+    
+    <!--MENU NAVEGACION-->
+    <nav class="border navDirection">
+        <ul>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="quienes-somos.html">Quienes somos?</a>
+                </div>
+            </li>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="porque-minar.html">Conviene minar?</a>
+                </div>
+            </li>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="productos.html">Productos</a>
+                </div>
+            </li>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="calculo-consumo-rentabilidad.html">Rentabilidad</a>
+                </div>
+            </li>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="contactanos.html">Contactanos</a>
+                </div>
+            </li>
+            <li>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="../index.html">Inicio</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
             
-        <!--SECCION PRODUCTOS-->
-        <section id="productos" class="border aplicarGridConvieneMinar">
-            <div class="aplicarMargen">
-                <iframe width="220" height="220" src="https://www.youtube.com/embed/0NXZ_YPWdps" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="aplicarMargen">
-                <iframe width="220" height="220" src="https://www.youtube.com/embed/Od7Un6WkxnI" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-            </div>
-            <div class="aplicarMargen">
-                <iframe width="200" height="220" src="https://www.youtube.com/embed/E5FCIiWZWQA" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="centrarTexto">
-                <p class="fuenteEnNegrita">La opinión de expertos</p>
-            </p>    
-        </section>
+    <!--SECCION PRODUCTOS-->
+    <section id="productos" class="border aplicarGridConvieneMinar">
+        <div class="aplicarMargen">
+            <iframe width="220" height="220" src="https://www.youtube.com/embed/0NXZ_YPWdps" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="aplicarMargen">
+            <iframe width="220" height="220" src="https://www.youtube.com/embed/Od7Un6WkxnI" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+        <div class="aplicarMargen">
+            <iframe width="200" height="220" src="https://www.youtube.com/embed/E5FCIiWZWQA" title="Video sobre minado" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="centrarTexto">
+            <p class="fuenteEnNegrita">La opinión de expertos</p>
+        </p>    
+    </section>
         
-        <!--SECCION SERVICIOS-->
-        <section id="servicios" class="border aplicarGridConvieneMinar">
-            <div class="aplicarMargen">
-                <iframe width="220" height="220" src="https://www.youtube.com/embed/zsopTKkXyqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="aplicarMargen">
-                <iframe width="220" height="220" src="https://www.youtube.com/embed/xdd5WVRqSJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="aplicarMargen">
-                <iframe width="220" height="220" src="https://www.youtube.com/embed/meFPwqmhYvc" title="Video sobre minado" frameborder= allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="fuenteEnNegrita centrarTexto">
-                <p class="fuenteEnNegrita">Escenario en el corto plazo</p>
-            </p>    
-        </section>
+    <!--SECCION SERVICIOS-->
+    <section id="servicios" class="border aplicarGridConvieneMinar">
+        <div class="aplicarMargen">
+            <iframe width="220" height="220" src="https://www.youtube.com/embed/zsopTKkXyqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="aplicarMargen">
+            <iframe width="220" height="220" src="https://www.youtube.com/embed/xdd5WVRqSJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="aplicarMargen">
+            <iframe width="220" height="220" src="https://www.youtube.com/embed/meFPwqmhYvc" title="Video sobre minado" frameborder= allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="fuenteEnNegrita centrarTexto">
+            <p class="fuenteEnNegrita">Escenario en el corto plazo</p>
+        </p>    
+    </section>
 
-        <aside class="border">
-            <ul class="navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
-                <p class="fuenteEnNegrita">Actualidad</p>
-                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
-                <li>
-                    <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
-                </li>
-                <li>
-                    <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
-                </li>
-                <li>
-                    <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
-                </li>
-                <li>
-                    <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
-                </li>
-                <li>
-                    <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
-                </li>
-                <li>
-                    <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
-                </li>
-            </ul>
+    <aside class="border">
+        <ul class="aplicarFlexBox navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+            <p class="fuenteEnNegrita">Actualidad</p>
+            <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+            <li>
+                <a class="divFAQs"  href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+            </li>
+            <li>
+                <a class="divFAQs"  href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+            </li>
+            <li>
+                <a class="divFAQs"  href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+            </li>
+            <li>
+                <a class="divFAQs"  href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+            </li>
+            <li>
+                <a class="divFAQs"  href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+            </li>
+            <li>
+                <a class="divFAQs"  class="a"href="contactanos.html">Que te gustaría ver?</a>
+            </li>
+        </ul>
             
-        </aside>
-        
-        <!--FOOTER-->
-        <footer class="border">
-            <div class="aplicarFlexBox SectionFooter">
-                <div>
-                    <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
-                </div>
-                <div>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-                    <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-                    <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-                    <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-                    <a href="pages/contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
-                </div>
-                <div>
-                    <p class="fuenteEnNegrita">Ubicanos en</p>
-                </div>
-                <div>
-                    <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
-                    <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
-                    
-                </div>
-        </footer>
+    </aside>
+    
+    <!--FOOTER-->
+    <footer class="border aplicarFlexBox SectionFooter">
+        <div >
+            <div>
+                <p>Seguinos en las redes sociales</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                <a href="https://web.whatsapp.com//" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                <a href="https://www.Instagram.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                <a href="https://www.Twitter.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                <a href="pages/contactanos.html"><img class="hoverImagen" src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+        </div>
+        </div>
+    </footer>
 
     </body>
 

@@ -24,90 +24,88 @@
 
     <!--ENCABEZADO-->
     <header class="border">
-        <div class="centrartexto">
-            <h1 class=" banner colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">RIGS CENTER</h1>
+        <div class="aplicarFlexBox aplicarFlexBoxRow">
+            <div>
+                <a class="banner" href="index.html"><img class="tamanioLogo" src="img/LogoEmpresa/Log1.png" alt=""></a>
+            </div>
+            <div>
+                <h1 class="banner colorBeige fuenteGrande estiloTituloPrincipal centrarTexto">TODO RIGS</h1>
+            </div>
         </div>
-    </header>  
+    </header>     
 
     <!--MENU NAVEGACION-->
-    <nav class="border">
-        <div class = "logoColorFondo centrarImagenLogo">
-            <a href="index.html">
-                <img  class="logoColorFondo banner" src= "img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
-            </a>
-        </div>
-        <ul class="navDirection aplicarMargenSuperioInferior">
+    <nav class="border navDirection">
+        <ul>
             <li>
-                <button class="btnQuinesSomos"><a href="pages/quienes-somos.html">Quienes somos?</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="pages/quienes-somos.html">Quienes somos?</a>
+                </div>
             </li>
             <li>
-                <button class="btnQuinesSomos"><a href="pages/porque-minar.html">Conviene minar?</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="pages/porque-minar.html">Conviene minar?</a>
+                </div>
             </li>
             <li>
-                <button class="btnQuinesSomos"><a href="pages/productos.html">Productos</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="pages/productos.html">Productos</a>
+                </div>
             </li>
             <li>
-                <button class="btnQuinesSomos"><a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>
+                </div>
             </li>
             <li>
-                <button class="btnQuinesSomos"><a href="pages/contactanos.html">Contactanos</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="pages/contactanos.html">Contactanos</a>
+                </div>
             </li>
             <li>
-                <button class="btnQuinesSomos"><a href="index.html">Inicio</a></button>
+                <div class="botoneraMenuNavegacion centrarTexto">
+                    <a href="index.html">Inicio</a>
+                </div>
             </li>
         </ul>
     </nav>
     
     <!--SECCION PRODUCTOS-->
     <section id="productos" class="border banner">
-        <!-- <h2 class="visibleNoVisible centrarTexto">Ofertas de la semana</h2>
-        <div class="aplicarFlexBox sectionProductosDirection">
-            <div class="card1">
-                <a href="pages/contactanos.html">
-                    <img src="img/Seccion Productos/RIG2.jpg" alt="Imagen de RIG 1">
-                </a>
-                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2001 - $ 1.500.000</p>
-                
-            </div>
-            <div class="card2">
-                <a href="pages/contactanos.html">
-                    <img src="img/Seccion Productos/RIG1.jpg" alt="Imagen de RIG 2">
-                </a>
-                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2014 - $ 1.800.000</p>
-            </div> 
-            <div class="card3">
-                <a href="pages/contactanos.html">
-                    <img src="img/Seccion Productos/RIG4.jpg" alt="Imagen de RIG 3">
-                </a>
-                <p class="centrarTexto fuenteEnNegrita">Modelo AKD2019 - $ 1.900.000</p>
-            </div> 
-        </div>         -->
         <div class="visibleNoVisible centrarTexto fuenteEnNegrita">
-            Ofertas de la semana
+            Galeria de Ofertas
         </div>
         <div class="aplicarFlexBox sectionProductosDirection">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="imgCarrusel" src="img/Seccion Productos/RIG1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="pages/contactanos.html">
+                        <img src="img/Seccion Productos/RIG2.jpg" class="d-block w-100" alt="..." width="300px" height="180px">
+                    </a>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <a href="pages/contactanos.html">
+                        <img src="img/Seccion Productos/RIG3.jpg" class="d-block w-100" alt="..."  width="300px" height="180px">
+                    </a>
                   </div>
                   <div class="carousel-item">
-                    <img class="imgCarrusel" src="img/Seccion Productos/RIG2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="imgCarrusel" src="img/Seccion Productos/RIG4.jpg" class="d-block w-100" alt="...">
+                    <a href="pages/contactanos.html">
+                        <img src="img/Seccion Productos/RIG6.jpg" class="d-block w-100" alt="..."  width="300px" height="180px">
+                    </a>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
         </div>
+        <p class="centrarTexto">Periodicamente publicamos ofertas semanales</p>
+        <p class="centrarTexto">No te pierdas la oportunidad de invertir!!!</p>
     </section>
 
     <!--SECCION SERVICIOS-->
@@ -118,56 +116,62 @@
         <div class="aplicarFlexBox sectionProductosDirection">  
             <div class="card1Servicios">
                 <a href="pages/contactanos.html">
-                    <img src="img/Seccion Index/advice.png" alt="Imagen de RIG 1">
+                    <img class="imgServicios" src="img/Seccion Index/Asesoramiento.jpg" alt="Imagen de RIG 1">
                 </a>
-                <p class="centrarTexto fuenteEnNegrita">Asesoramiento</p>
+                <p class="centrarTexto">Asesoramiento</p>
+                <p class="centrarTexto">Pre y Post Venta</p>
             </div>
             <div class="card1Servicios">
                 <a href="pages/contactanos.html">
-                    <img src="img/Seccion Index/Mant.png" alt="Imagen de RIG 2">
+                    <img class="imgServicios" src="img/Seccion Index/Admin.jpg" alt="Imagen de RIG 1">
                 </a>
-                <p class="centrarTexto fuenteEnNegrita">Administracion de RIG</p>
+                <p class="centrarTexto">Administracion de RIG</p>
+                <p class="centrarTexto">Servicio personalizado</p>
             </div> 
             <div class="card1Servicios">
                 <a href="pages/contactanos.html">
-                    <img src="img/Seccion Index/maintanance.jpg" alt="Imagen de RIG 3">
+                    <img class="imgServicios" src="img/Seccion Index/Mante.jpg" alt="Imagen de RIG 1">
                 </a>
-                <p class="centrarTexto fuenteEnNegrita">Mantenimiento de RIG</p>
+                <p class="centrarTexto">Mantenimiento de RIG</p>
+                <p class="centrarTexto">Control en tiempo real</p>
             </div> 
         </div>
+        <div class="centrarTexto">
+            <a href="pages/contactanos.html" class="fuenteGeneral">Me interesa, por favor contactenme</a>
+        </div>        
     </section>
 
     <aside class="border banner">
         <ul class="aplicarFlexBox navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
-            <h3>
+            <p class="fuenteNegrita">
                 Actualidad
-            </h3>
+            </p>
             <li>
-                <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+                <a class="divFAQs" href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
             </li>
             <li>
-                <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+                <a class="divFAQs" href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
             </li>
             <li>
-                <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+                <a class="divFAQs" href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
             </li>
             <li>
-                <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+                <a class="divFAQs" href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
             </li>
             <li>
-                <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+                <a class="divFAQs" href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
             </li>
             <li>
-                <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+                <a class="divFAQs" href="pages/contactanos.html">Que te gustaría ver?</a>
             </li>
         </ul>
     </aside>
 
     <!--FOOTER-->
-    <footer class="border banner">
-        <div class="aplicarFlexBox SectionFooter">
+    <footer class="border aplicarFlexBox SectionFooter">
+        <div >
             <div>
-                <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+                <p>Seguinos en las redes sociales</p>
             </div>
             <div>
                 <a href="https://www.facebook.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
@@ -177,12 +181,7 @@
                 <a href="https://www.Twitter.com/" target="_blank"><img class="hoverImagen" src="img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
                 <a href="pages/contactanos.html"><img class="hoverImagen" src="img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
             </div>
-            <div>
-                <p class="fuenteEnNegrita">Ubicanos en</p>
-            </div>
-            <div>
-                <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
-            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     

@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <!--Declaracion de CSS-->
+        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
         <!--TITULO del sitio-->
         <title>Contactanos</title>
@@ -22,126 +23,112 @@
 
         <!--ENCABEZADO-->
         <header class="border">
-            <div class="centrartexto">
-                <h1 class="colorAzul fuenteGrande  estiloTituloPrincipal centrarTexto">Contactanos</h1>
+            <div class="aplicarFlexBox aplicarFlexBoxRow">
+                <div>
+                    <a class="banner" href="../index.html"><img class="tamanioLogo" src="../img/LogoEmpresa/Log1.png" alt=""></a>
+                </div>
+                <div>
+                    <h1 class="banner colorBeige fuenteGrande estiloTituloPrincipal centrarTexto">Contactanos</h1>
+                </div>
             </div>
-        </header>       
+        </header>         
     
         <!--MENU NAVEGACION-->
-        <nav class="border">
-            <div class = "centrarImagenLogo">
-                <a href="../index.html">
-                    <img src= "../img/LogoEmpresa/android-chrome-192x192.png" alt = "Logo de la empresa" title="Logo de la empresa">
-                </a>
-            </div>
-            <ul class="navDirection aplicarMargenSuperioInferior">
-                <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
+        <nav class="border navDirection">
+            <ul>
                 <li>
-                    <!--<a href="pages/quienes-somos.html">Quienes somos?</a>-->
-                    <button class="btnQuinesSomos"><a href="quienes-somos.html">Quienes somos?</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="quienes-somos.html">Quienes somos?</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/porque-minar.html">Conviene minar?</a>-->
-                    <button class="btnQuinesSomos"><a href="porque-minar.html">Conviene minar?</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="porque-minar.html">Conviene minar?</a>
+                    </div>
                 </li>
                 <li>
-                   <!-- <a href="pages/productos.html">Productos</a>-->
-                    <button class="btnQuinesSomos"><a href="productos.html">Productos</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="productos.html">Productos</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/calculo-consumo-rentabilidad.html">Rentabilidad</a>-->
-                    <button class="btnQuinesSomos"><a href="calculo-consumo-rentabilidad.html">Rentabilidad</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="calculo-consumo-rentabilidad.html">Rentabilidad</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="contactanos.html">Contactanos</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="contactanos.html">Contactanos</a>
+                    </div>
                 </li>
                 <li>
-                    <!--<a href="pages/contactanos.html">Contactanos</a>-->
-                    <button class="btnQuinesSomos"><a href="../index.html">Inicio</a></button>
+                    <div class="botoneraMenuNavegacion centrarTexto">
+                        <a href="../index.html">Inicio</a>
+                    </div>
                 </li>
             </ul>
         </nav>
 
           <!--SECCION PRODUCTOS-->
-          <section id="productos" class="border aplicarGridContactanos">
-
-            <!--<p class="colorAzul fuenteChica estiloTituloSecundario centrarTexto margenSuperiorEnCero">
-                Contactanos para realizarnos cualquie tipo de consulta. Podemos concretar una reunion por Zoom o presencial para asesorarte
-            </p>
-       
-    
-            <h2 >Ingresa tus datos para poder contactarte</h2>
-             -->
+          <section id="productos" class="aplicarGridContactanos">
             
-            <!--Formulario para el ingreso de datos del cliente para poder contactarlo-->
-            <form class="aplicarGridContactanos">
-                <div>
-                    <fieldset>
-                        <legend>Como te ubicamos?</legend>
-                        <div>
-                            <label for="apellido-nombre">Apellido y Nombre:</label>
-                            <input type="text" id="apellido-nombre" required placeholder="Dato obligatorio">
-                        </div>
-                        <div>
-                            <label for="celular">Celular:</label>
-                            <input type="tel" id="celular" required placeholder="Dato obligatorio">
-                        </div>
-                        <div>
-                            <label for="e-mail">Email:</label>
-                            <input type="email" id="e-mail"required placeholder="Dato obligatorio">
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Podemos chatearte previamente para coordinar el llamado?</legend>
-                        <label for="si">Si</label>
-                        <input type="radio" name="chat-si-no" id="si"
-                        <label for="no">No</label>
-                        <input type="radio" name="chat-si-no" id="no"
-                    <fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Servicio/Producto deseado</legend>
-                        <div>
-                            <input type="checkbox" id=""
-                            <label for="RIG-llave-en-mano">RIG llave en mano</label>
-                        </div>
-                        
-                            <input type="checkbox" id=""
-                            <label for="Asesoria-para-armado-de-RIG">Asesoria para armado de RIG</label>
-                        
-                        <div></div>
-                            <input type="checkbox" id=""
-                            <label for="Mantenimiento-de-RIG">Mantenimiento de RIG</label>
-                        </div>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Como nos conociste?</legend>
-                        <select name="" id="" selected>
-                            <option value="" selected></option>
-                            <option value="">Facebook</option>
-                            <option value="">Instagram</option>
-                            <option value="">Referencias</option>
-                            <option value="">Twitter</option>
-                        </select>
-                    </fieldset>
-                </div>
+            <h6 class="centrarTexto">Por favor ingresa los siguientes datos</h6>
+            <div class="mb-3 aplicarFlexBoxRow">
+                <label for="exampleFormControlInput1" class="form-label centrarTextoConPadding">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
 
+                <label for="exampleFormControlInput1" class="form-label centrarTextoConPadding">Celular</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1">
+
+                <label for="exampleFormControlInput1" class="form-label centrarTextoConPadding">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            
+            <div class="aplicarFlexBoxRow">
+                <h6 class="centrarTextoConPadding">Podemos chatearte para coordinar una reunion virtual?</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Sí</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                </div>
+            </div>
+            <div class="aplicarFlexBoxRow">
+                <h6 class="centrarTextoConPadding">Que servicio o producto te interesa?</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">RIG llave en mano</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Asesoria</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Mantenimiento</label>
+                </div>
         </section>
 
          <!--SECCION SERVICIOS-->
-         <section id="servicios" class="border">
-            <div class="alinearControlaGrid">
-                
-                    <legend>Ingresa un comentario si deseas agregar algo mas</legend>
-                    <textarea name="" id="" cols="100" rows="10"></textarea>
-                
-            <div>
+         <section id="servicios" class="aplicarGridContactanos">
+            <div class="aplicarFlexBoxRowEspaciado">
+            <h6>Como nos conociste?</h6>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona una opción</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">Referencias</option>
+                <option value="3">Twitter</option>
+            </select>
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Algun comnetario que nos quieras hacer?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
             <div>
                 <input type="submit" value="Enviar solicitud">
                 <input type="reset" value="Borrar datos ingresados">
@@ -150,56 +137,47 @@
         </section>
 
         <aside class="border">
-            <ul class="navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
+            <ul class="aplicarFlexBox navDirectionAside aplicarMargenSuperioInferiorAside fuenteChica">
                 <p class="fuenteEnNegrita">Actualidad</p>
                 <!--En cada etiqueta LI aplico una clase para que la disposicion sea HORIZONTAL-->
                 <li>
-                    <a href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
+                    <a class="divFAQs"  href="https://geekflare.com/es/finance/best-cryptocurrency-mining-platforms/" target="_blank">Plataformas</a>
                 </li>
                 <li>
-                    <a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
+                    <a class="divFAQs" a href="https://dolarhoy.com/" target="_blank">Cotización dolar</a>
                 </li>
                 <li>
-                    <a href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
+                    <a class="divFAQs"  href="https://coin360.com" target="_blank">Cotizacion Crypto</a>
                 </li>
                 <li>
-                    <a href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
+                    <a class="divFAQs"  href="https://es.beincrypto.com/aprende/mejores-servicios-mineria-nube-2020/" target="_blank">Minería en la nube</a>
                 </li>
                 <li>
-                    <a href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
+                    <a class="divFAQs"  href="https://www.educacionit.com/curso-de-bitcoins-y-criptomonedas?gclid=Cj0KCQjwxtSSBhDYARIsAEn0thTiElq0CPQXRS4Nfx9mQ3xM3oTSZyYFsaEH-3SZhCfiai7OT0IYBBEaAvLAEALw_wcB/" target="_blank">Cursos</a>
                 </li>
                 <li>
-                    <a class="a"href="pages/contactanos.html">Que te gustaría ver?</a>
+                    <a class="divFAQs"  class="a"href="contactanos.html">Que te gustaría ver?</a>
                 </li>
             </ul>
             
         </aside>
-       
-       
-          
+           
         </form>
 
-        <footer class="border">
-            <div class="aplicarFlexBox SectionFooter">
+        <footer class="border aplicarFlexBox SectionFooter">
+            <div >
                 <div>
-                    <p class="fuenteEnNegrita">Seguinos en las redes sociales</p>
+                    <p>Seguinos en las redes sociales</p>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
-                    <a href="https://web.whatsapp.com//" target="_blank"><img src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
-                    <a href="https://www.Instagram.com/" target="_blank"><img src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
-                    <a href="https://www.Twitter.com/" target="_blank"><img src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
-                    <a href="pages/contactanos.html"><img src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/facebook_108044.ico" alt="Icono para acceso a FaceBook"></a>
+                    <a href="https://web.whatsapp.com//" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/whatsapp_108042.ico" alt="Icono para acceso a Whatapp"></a>
+                    <a href="https://www.Instagram.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/instagram_108043.ico" alt="Icono para acceso a Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/youtube_108041.ico" alt="Icono para acceso a Youtube"></a>
+                    <a href="https://www.Twitter.com/" target="_blank"><img class="hoverImagen" src="../img/Iconos redes sociales/social-twitter-icon_34350.ico" alt="Icono para acceso a Twitter"></a>
+                    <a href="contactanos.html"><img class="hoverImagen" src="../img/Iconos redes sociales/1486564396-mail_81524.ico" alt="Icono para envíp de mail"></a>
                 </div>
-                <div>
-                    <p class="fuenteEnNegrita">Ubicanos en</p>
-                </div>
-                <div>
-                    <!--<a href="https://www.google.com.ar/maps/" target="_blank"><img src="img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps"></a>-->
-                    <a href="https://goo.gl/maps/U7o7uwra6ToKxMeq5" target="_blank"><img src="../img/Iconos redes sociales/google_maps_logo_icon_170064.ico" alt="Icono para acceso a Google Maps">
-                    
-                </div>
+            </div>
         </footer>
 
     </body>
