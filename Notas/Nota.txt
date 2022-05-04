@@ -1,13 +1,15 @@
-Formato: archivos HTML y documento de Google Doc. Debe tener el nombre “Idea+Apellido”. 
-Sugerencia: carpeta en formato zip o rar con el/los archivos HTML. Revisar que el documento tenga permisos para el acceso.
- 
+Etiqueta TITLE
+	Modifique la misma en cada pagina, colocando el formato "Nombre del sitio" + "|" + "Sección"
+Etiqueta META KEYWORDS
+	Coloque palabras claves asociadas a cada pagina del sitio
+Etiqueta META DESCRIPTION
+	Coloque la descripción resumida en cada pagina
+ENCABEZADOS
+	Todos los titulos de cada pagina los pase a encabezado H1
+	El resto de los subtitulos de cada sección los pase a H2 y H3 para generar la jerarquia
+MAPS
+	Esto desarrollando una idea, por ahora falla. Esta en la pagina INDEX.HTML
+	Quiero hacer un mapa donde figure el valor de la propiedad ALT para cada icono del footer, de manera de que si tengo que cambiar la leyenda 
+de esta propiedad, lo haga solo en el mapa y no en cada pagina donde esta el icono asociado al footer.
 
->> Consigna: Aplicar un mapa, un mixin y un extend para modificar cualquier elemento de nuestro sitio. Realizar las modificaciones necesarias para mejorar el SEO en nuestro sitio.
-
->>Aspectos a incluir en el entregable:
-Declarar un mapa y utilizar un map-get. Extender una clase base y modificarla. Generar un mixin para reutilizar código.
-	Suma keywords, descripción, títulos y encabezado a todas las páginas de tu sitio.
-	Explica en un Google Doc los cambios realizados en el punto anterior, por ejemplo: 
-“Agregué estas keywords”, “cambié estos títulos”
->>Ejemplo:
-Carpeta comprimida con mi sitio / Documento explicativo del SEO
+	
