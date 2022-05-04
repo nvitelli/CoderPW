@@ -1,0 +1,13 @@
+Formato: archivos HTML y documento de Google Doc. Debe tener el nombre “Idea+Apellido”. 
+Sugerencia: carpeta en formato zip o rar con el/los archivos HTML. Revisar que el documento tenga permisos para el acceso.
+ 
+
+>> Consigna: Aplicar un mapa, un mixin y un extend para modificar cualquier elemento de nuestro sitio. Realizar las modificaciones necesarias para mejorar el SEO en nuestro sitio.
+
+>>Aspectos a incluir en el entregable:
+Declarar un mapa y utilizar un map-get. Extender una clase base y modificarla. Generar un mixin para reutilizar código.
+	Suma keywords, descripción, títulos y encabezado a todas las páginas de tu sitio.
+	Explica en un Google Doc los cambios realizados en el punto anterior, por ejemplo: 
+“Agregué estas keywords”, “cambié estos títulos”
+>>Ejemplo:
+Carpeta comprimida con mi sitio / Documento explicativo del SEO
