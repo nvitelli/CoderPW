@@ -1,5 +1,5 @@
 .fuenteGrande{
-    font-size: 68px;
+    font-size: map-get($estiloTituloPrincipal, tamanioFuente)
 }
 /*clase para aplicar un tamaño mediano a una fuente*/
 .fuenteMediana{
@@ -58,4 +58,50 @@ li{
 }
 .aplicarMargenSuperioInferior{
     margin-top: 1px;
+}
+
+/*Clase para aplicar estilo al cuadrante del titulo principal*/
+.estiloTituloPrincipal{
+    background-color: map-get($estiloTituloPrincipal, colorFondo);
+    background-size: 80px;
+    height: map-get($estiloTituloPrincipal, altura);
+} 
+
+/*Clase para centrar texto*/
+.centrarTexto{
+    text-align: map-get($estiloTituloPrincipal, alineacionTexto );
+}
+
+.colorTituloPrincipal{
+    color:map-get($estiloTituloPrincipal,colorFuente);
+}
+
+.boton {
+	width:200px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:1px solid black;
+}
+
+.comentarioImagen{
+	@extend .fuenteEnNegrita;
+	@extend .centrarTexto;
+}
+
+.subComentarioImagen{
+	@extend .fuenteEnNegrita;
+	@extend .centrarTexto;
+    font-size: 0.75rem;
+}
+
+@mixin flexRowCentrado{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.aplicarFlexRowCentrado {
+   @include flexRowCentrado;
 }

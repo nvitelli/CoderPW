@@ -10,9 +10,6 @@
 }
 
 /*clase para aplicar un color especifico a una etiqueta*/
-.colorBeige{
-    color:beige
-}
 
 /*clase para aplicar un color especifico a un fondo*/
 body{
@@ -36,12 +33,7 @@ a{
     background-color: cornflowerblue;
 }
 
-/*Clase para aplicar estilo al cuadrante del titulo principal*/
-.estiloTituloPrincipal{
-    background-color: cornflowerblue;
-    background-size: 80px;
-    height: 98px;
-} 
+
 .estiloTituloSecundario{
     /* background-color: beige; */
     color: black;
@@ -70,10 +62,6 @@ a{
     margin: 10px;
 }
 
-/*Clase para centrar texto*/
-.centrarTexto{
-    text-align: center;
-}
 .centrarTextoConPadding{
     text-align: center;
     padding-right: 25px;

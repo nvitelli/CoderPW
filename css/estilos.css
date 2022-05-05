@@ -15,7 +15,7 @@
 }
 
 /*clase para aplicar negrita a un texto*/
-.fuenteEnNegrita {
+.fuenteEnNegrita, .subComentarioImagen, .comentarioImagen {
   font-weight: bold;
 }
 
@@ -74,6 +74,42 @@ li {
 
 .aplicarMargenSuperioInferior {
   margin-top: 1px;
+}
+
+/*Clase para aplicar estilo al cuadrante del titulo principal*/
+.estiloTituloPrincipal {
+  background-color: #6495ed;
+  background-size: 80px;
+  height: 98px;
+}
+
+/*Clase para centrar texto*/
+.centrarTexto, .subComentarioImagen, .comentarioImagen {
+  text-align: center;
+}
+
+.colorTituloPrincipal {
+  color: #f5f5dc;
+}
+
+.boton {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.subComentarioImagen {
+  font-size: 0.75rem;
+}
+
+.aplicarFlexRowCentrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 body {

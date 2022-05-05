@@ -1,0 +1,34 @@
+MAP
+Cree el map $estiloTituloPrincipalm y declare en el mismo las variables asociadsa a las clases que 
+utilizo para dar estilo al titulo prncipal de cada seccion.
+Quedando:
+
+$estiloTituloPrincipal: (
+  colorFondo: #6495ed,
+  alineacionTexto: center,
+  altura : 98px,
+  tamanioFuente:68px,
+  colorFuente:#f5f5dc
+);
+
+El MAP lo declare en un nuevo archivo _mapas.scss, el cual luego lo uni a estilo.scss mediante @import "mapas";
+Luego tuve que coolocar esta declaracion arriba de todo en este archivo, porque si no no era visible por
+"_clasesReutilizables", que es donde hice uso del MAP, quedando de la siguiente manera:
+@import "mapas";
+@import "variables";
+@import "clasesReutilizables";
+De esta manera, las clases dentro de "clasesReutilizables" tenian visibilidad sobre el mapa (antes de esto me daba error)
+Luego de estom en las clases que dan estilo a los titulos principales de cada seccion, reemplace el valor que le daba al atributo con la 
+posicion del MAP asociado, por ejemplo:
+en lugar de declarar:
+
+background-color: cornflowerblue;
+
+lo reemplace por 
+
+background-color: map-get($estiloTituloPrincipal, colorFondo);
+
+Donde color de fondo tiene el valor  declarado como #6495ed.
+
+
+
