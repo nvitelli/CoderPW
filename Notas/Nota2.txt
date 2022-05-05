@@ -1,5 +1,5 @@
 MAP
-Cree el map $estiloTituloPrincipalm y declare en el mismo las variables asociadsa a las clases que 
+Cree el map "$estiloTituloPrincipalm" y declare en el mismo las variables asociadsa a las clases que 
 utilizo para dar estilo al titulo prncipal de cada seccion.
 Quedando:
 
@@ -13,14 +13,16 @@ $estiloTituloPrincipal: (
 
 El MAP lo declare en un nuevo archivo _mapas.scss, el cual luego lo uni a estilo.scss mediante @import "mapas";
 Luego tuve que coolocar esta declaracion arriba de todo en este archivo, porque si no no era visible por
-"_clasesReutilizables", que es donde hice uso del MAP, quedando de la siguiente manera:
+"_clasesReutilizables", que es donde uso este MAP, quedando de la siguiente manera:
+
 @import "mapas";
 @import "variables";
 @import "clasesReutilizables";
+
 De esta manera, las clases dentro de "clasesReutilizables" tenian visibilidad sobre el mapa (antes de esto me daba error)
-Luego de estom en las clases que dan estilo a los titulos principales de cada seccion, reemplace el valor que le daba al atributo con la 
+Luego de esto, en las clases que dan estilo al titulo principal en cada seccion, reemplace el valor que le daba al atributo con la 
 posicion del MAP asociado, por ejemplo:
-en lugar de declarar:
+Donde decia:
 
 background-color: cornflowerblue;
 
@@ -28,7 +30,77 @@ lo reemplace por
 
 background-color: map-get($estiloTituloPrincipal, colorFondo);
 
-Donde color de fondo tiene el valor  declarado como #6495ed.
+Donde "colorFondo" tiene el valor declarado en el mapa como "#6495ed".
+
+la clases donde hice uso del MAP son:
+
+.fuenteGrande{
+    font-size: map-get($estiloTituloPrincipal, tamanioFuente)
+}
+
+.estiloTituloPrincipal{
+    background-color: map-get($estiloTituloPrincipal, colorFondo);
+    background-size: 80px;
+    height: map-get($estiloTituloPrincipal, altura);
+
+.centrarTexto{
+    text-align: map-get($estiloTituloPrincipal, alineacionTexto );
+}
+
+.colorTituloPrincipal{
+    color:map-get($estiloTituloPrincipal,colorFuente);
+}
+
+
+
+EXTEND
+
+Cree la clase .comentarioImagenm, donde 2 extend juntos, para agrupar los estilos de 2 clases disintas
+
+.comentarioImagen{
+	@extend .fuenteEnNegrita;
+	@extend .centrarTexto;
+}
+
+lo aplique en index.html, en el comentario de cada servicio
+
+Luego hice otra clase para el sucomentario, donde de nuevo hago el extend para las mismas 2 clases, y le sumo un atributo propio de este clase
+
+.subComentarioImagen{
+	@extend .fuenteEnNegrita;
+	@extend .centrarTexto;
+    font-size: 0.75rem;
+}
+
+La utiice para los sub comentarios de las imagenes.
+La llamda esta por ejemplo en:
+
+<p class="comentarioImagen">Mantenimiento de RIG</p>
+<p class="subComentarioImagen">Control en tiempo real</p>
+
+
+MIXINS
+
+Gener el mixins 
+
+@mixin flexRowCentrado{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.aplicarFlexRowCentrado {
+   @include flexRowCentrado;
+}
+
+y luego aplique el mismo en la pagina porque-minar.html, luego lo aplicare al resto de las paginas para donde aplique esta caracteristica
+
+
+
+
+
+
+
+
 
 
 
