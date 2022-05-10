@@ -1,3 +1,11 @@
+* {
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
 .fuenteGrande{
     font-size: map-get($estiloTituloPrincipal, tamanioFuente)
 }
@@ -14,16 +22,14 @@
 .fuenteEnNegrita{
     font-weight:bold;
 }
-li{
-    display:inline-block;
-    align-items: center;
-    margin-bottom: 25px;
-    margin-top: 15px;
-}
+
+
+
 /*clase para aplicar interlineado a un parrafo*/
 .aplicarInterlineado{
     line-height: 2px;
 }
+
 /*Coloca margen superior en cero*/
 .margenSuperiorEnCero{
     margin-top: 0px;
@@ -47,6 +53,13 @@ li{
 }
 .aplicarFlexBoxRow{
     flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+}
+
+.aplicarFlexBoxColumn{
+    flex-direction:column;
     justify-content:center;
 }
 .aplicarFlexDirectionHorizontal{
@@ -102,6 +115,114 @@ li{
 	flex-direction:row;
 	justify-content:center;
 }
-.aplicarFlexRowCentrado {
+.aplicarCentradoTitulo {
    @include flexRowCentrado;
+}
+/*clase para aplicar a LISTAS sin viñetas ni numeros */
+.listaSinVinietas{
+    list-style: none
+}
+/*clase para aplicar un color especifico a un fondo*/
+.body{
+    background-color:cornflowerblue;
+}
+/*clase para aplicar una familia de fuentes*/
+.fuenteExterna{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.estiloTituloPrincipal background-image{
+    text-align: center;
+}
+.estiloTituloSecundario{
+    color: black;
+    height: 10px;
+    // margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+/*Coloca una imagen e indica que no la misma no se repita a lo ancho de la pagina*/
+.colocarImagenFondoTitulo{
+    background-image:url("../img/LogoEmpresa/android-chrome-192x192.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+} 
+
+.AplicarMargenSuperiorParrafo{
+    margin-top: 20px;
+}
+
+.aplicarMargen{
+    margin: 10px;
+}
+
+.centrarTextoConPadding{
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.tamanioLogo{
+    width: 98px;
+}
+.tamanioSeccionProductos{
+    width: 250px;
+    padding: 10px;
+    /* background-color: beige; */
+}
+
+.tamanioImagenRentabilidad{
+    width: 750px;
+    padding: 10px;
+}
+
+.tamanioImagenQuienesSomos{
+    width: 170px;
+    height: 130;
+    padding: 12px;
+ }
+
+#itemsRIGS{
+    flex-direction: row;
+    justify-content:center;
+}
+.ModificarMargenDerecho{
+    margin: 50px;
+}
+.centrarImagenLogo{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1:hover{
+    transform: scale(1.1);
+}
+
+.card2:hover{
+    transform: scale(1.1);
+}
+.card3:hover{
+    transform: scale(1.1);
+}
+
+.card1Servicios:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.hoverImagen:hover{
+    transform: scale(1.1);
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+.banner{
+    animation-duration: 1s;
+    animation-name: banner;
+}
+
+.border {
+    border: 1px solid beige;
 }

@@ -1,0 +1,163 @@
+.card1{
+    width: 250px;
+    height: 310px;
+}
+.card2{
+    width: 250px;
+    height: 310px;
+}
+.card3{
+    width: 250px;
+    height: 310px;
+}
+.card1 img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.card2 img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.card3 img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.card1Servicios{
+    width: 400%;
+    height: 210px;
+}
+    
+.card1Servicios img{
+    border-radius: 30px;
+    display:block;
+    margin:auto;
+    padding:5px;
+    width:240px;
+}
+
+.cardCondicionesPago{
+    grid-column: 1/5;
+}
+
+.cardCondicionesPagoIndex{
+    width: 25%;
+    height: 150px;
+}
+
+.cardCondicionesPago img{ 
+    display:block;
+    margin:auto;
+    justify-items: center;
+    }
+
+.cardCondicionesPagoIndex img{ 
+    width: 250px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.cardCondicionesPagoProductos{
+    width: 25%;
+    height: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-width: 1px;
+    grid-column: 1/6;
+}
+
+.cardCondicionesPagoProductos img{ 
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    display:block;
+    margin:auto;
+    justify-items: center;
+}
+   
+.card1 button{
+    border-color:green;
+    border-start-start-radius: 20%;
+    border-end-end-radius: 20%;
+}
+
+.cardTitulo{
+    background-color:beige;
+    margin-top: 0px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    color:cornflowerblue;
+}
+
+.containerCardsProductos{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    max-width: 1100px; 
+ }
+ @media screen and (max-width: 767px) {
+    .containerCardsProductos{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        margin-top: 65px;
+    }
+}
+ 
+.cardProducto{
+    width: 100%;
+    margin: 20px;
+    box-shadow: 2px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px;
+    /* box-shadow: 0px 1px 10px rgb(0, 0, 0 0.2);*/
+    cursor: default;
+    transition: all 400ms ease;
+}
+.cardProducto:hover {
+    box-shadow: 0px 1px 10px;
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0 0.4);*/
+    transform: translatey(-3%);
+}
+
+.cardProducto img{
+    width: 100%;
+    height: 110px;
+}
+
+.cardProducto contenidoCard{
+    padding: 15px;
+    text-align: center;
+}
+
+.cardProducto contenidoCard p{
+    line-height: 1.5;
+    color: grey;
+}
+
+.cardProducto contenidoCard h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.cardProducto contenidoCard a{
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cardProducto contenidoCard a:hover{
+    background-color: lightblue;
+    color: white;
+}
+

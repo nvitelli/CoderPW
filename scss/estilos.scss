@@ -1,10 +1,239 @@
 @import "mapas";
-@import "variables";
 @import "clasesReutilizables";
+@import "cards";
+@import "variables";
+@import "efectos";
+@import "grids";
+@import "footer";
 
 
 body{
     background-color:$colorBody;
 }
 
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header   header      header"
+    "nav      productos   publicidad"
+    "nav      servicios   publicidad"
+    "footer   footer      footer";
+    grid-template-rows: 100px 350px 350px 75px; 
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+ }
 
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;    
+ }
+ section#servicios {
+    grid-area: servicios;     
+ }
+ nav {
+    grid-area: nav;
+ }
+ aside {
+    grid-area: publicidad;
+ }
+
+/*INICIO MEDIA QUERIES ESTRUCTURA GENERAL*/
+@media screen and (min-width: 768px) {
+    #grilla {
+    display: grid;
+    grid-template-areas:
+     "header header    header"
+     "nav productos publicidad"
+     "nav servicios publicidad"
+     "footer footer    footer";
+     grid-template-columns: 15% auto 15%;
+     grid-template-rows: 100px 350px 350px 100px; 
+    }
+}
+/*CELULARES*/
+@media screen and (max-width: 768px) {
+    #grilla {
+    display: grid;
+    grid-template-areas:
+     "header" 
+     "nav"  
+     "productos"
+     "servicios"
+     "publicidad"
+     "footer";
+     grid-template-columns: auto;
+     grid-template-rows: auto; 
+}
+}
+/*FIN MEDIA QUERIES ESTRUCTURA GENERAL*/
+
+.divFAQs{
+    color:  beige;
+    border-style: beige;
+    border-width: 200px;
+    padding: 10px;
+    text-decoration: none;
+}
+.divFAQs:hover{
+    border: 1px solid beige;
+}
+
+.aplicarAnchoAcordeon{
+    width: 500px;
+    align-items: center;
+}
+
+.aplicarFlexBoxRowEspaciado{
+    display:flex;
+    flex-direction:row;
+}
+
+.imagenaDerecha{
+    justify-content: right;
+}
+
+.sectionProductosDirection{
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 25px;
+    margin-bottom:25px;
+ }
+
+@media screen and (max-width: 768px) {
+    .sectionProductosDirection{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+}
+
+.sectionServiciosDirection{
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 25px;
+    margin-bottom:25px;
+ }
+
+@media screen and (max-width: 768px) {
+    .sectionServiciosDirection{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        margin-top: 65px;
+    }
+}
+
+.SectionHeaderUbicacion{
+    flex-direction:row;
+    justify-content:right;
+ }
+
+ .navDirection{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+ }
+
+ @media screen and (max-width: 768px) {
+    .navDirection{
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items:center;
+        width: 100%;
+    }
+}
+
+.navDirectionAside{
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 120px;
+    padding-left: 20px;
+ }
+
+ @media screen and (max-width: 768px) {
+    .navDirectionAside{
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 300px;
+        margin-bottom: 120px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aplicarCentradoTitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.btnQuinesSomos{
+    border-color:beige;
+    transition:box-shadow 0.2s ease-in-out;
+    width: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgCarrusel{
+    width: 250px;
+    height: 180px;
+    border-radius: 20%;
+}
+.imgServicios{
+    width: 300px;
+    height: 170px;
+}
+
+.btnQuinesSomos:hover{
+    box-shadow: 1 1 20px  beige inset;
+}
+
+.aplicarMargenSuperioInferiorAside{
+    margin-top: 150px;   
+}
+
+.colorFuenteAside{
+    color: beige;
+}
+
+ .botoneraMenuNavegacion{
+    border: 1px solid beige;
+    width: 140px;
+    height: 60;
+    margin-top: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: beige;    
+}
+
+li{
+    display:inline-block;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    list-style: none;
+    font-weight: bold;
+    text-decoration:none;
+    color: beige;
+}
+
+a{
+    text-decoration: none;
+    color: beige;
+}

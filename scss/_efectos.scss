@@ -1,0 +1,85 @@
+@keyframes banner {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+.visibleNoVisible {
+    animation-duration: 1s;
+    animation-name: visibleNoVisible;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes visibleNoVisible {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ .containerFlip{
+    width: 890px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.tarjetaFlip{
+    margin: 55px 20px 20px 20px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+.Tarjeta{
+    width: 200px;
+    height: 155px;
+    /* background-color: beige;  */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s ease;
+    /* border-radius: 20%; */
+    background-color: beige;
+    margin: 10px;
+}   
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante{
+    width: 100%;
+}
+
+.adelante img{
+    width: 200px;
+    height: 155px;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: cornflowerblue;
+    font-family: "tahoma";
+    font-weight: bolder;
+}
+
+.tarjetaFlip:hover .Tarjeta{
+    transform: rotateY(180deg);
+}
+

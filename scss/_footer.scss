@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+}
+
+.footerGrid{
+    display: grid;
+    grid-template-columns: 7;
+    grid-template-rows: 1;
+    text-align: center;
+}
+.SectionFooter{
+    flex-direction:row;
+    justify-content:center;
+    justify-items:center;
+    align-items: center;
+ }
