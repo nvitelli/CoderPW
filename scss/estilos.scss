@@ -8,21 +8,21 @@
 
 
 body{
-    background-color:$colorBody;
+    background-color:$colorPrincipal;
 }
 
-#grilla {
-    display: grid;
-    grid-template-areas:
-    "header   header      header"
-    "nav      productos   publicidad"
-    "nav      servicios   publicidad"
-    "footer   footer      footer";
-    grid-template-rows: 100px 350px 350px 75px; 
-    grid-template-columns: 15% auto 15%;
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
- }
+// #grilla {
+//     display: grid;
+//     grid-template-areas:
+//     "header   header      header"
+//     "nav      productos   publicidad"
+//     "nav      servicios   publicidad"
+//     "footer   footer      footer";
+//     grid-template-rows: 100px 350px 350px 75px; 
+//     grid-template-columns: 15% auto 15%;
+//     grid-column-gap: 2px;
+//     grid-row-gap: 2px;
+//  }
 
  header {
     grid-area: header;
@@ -44,20 +44,9 @@ body{
  }
 
 /*INICIO MEDIA QUERIES ESTRUCTURA GENERAL*/
-@media screen and (min-width: 768px) {
-    #grilla {
-    display: grid;
-    grid-template-areas:
-     "header header    header"
-     "nav productos publicidad"
-     "nav servicios publicidad"
-     "footer footer    footer";
-     grid-template-columns: 15% auto 15%;
-     grid-template-rows: 100px 350px 350px 100px; 
-    }
-}
+
 /*CELULARES*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #grilla {
     display: grid;
     grid-template-areas:
@@ -73,15 +62,29 @@ body{
 }
 /*FIN MEDIA QUERIES ESTRUCTURA GENERAL*/
 
+/*PCs*/
+@media screen and (min-width: 768px) {
+    #grilla {
+    display: grid;
+    grid-template-areas:
+     "header header    header"
+     "nav productos publicidad"
+     "nav servicios publicidad"
+     "footer footer    footer";
+     grid-template-columns: 15% auto 15%;
+     grid-template-rows: 100px 350px 350px 100px; 
+    }
+}
+
 .divFAQs{
-    color:  beige;
-    border-style: beige;
+    color: $colorSecundario;
+    border-style: $colorSecundario;
     border-width: 200px;
     padding: 10px;
     text-decoration: none;
 }
 .divFAQs:hover{
-    border: 1px solid beige;
+    border: 1px solid $colorSecundario;
 }
 
 .aplicarAnchoAcordeon{
@@ -185,7 +188,7 @@ body{
 }
 
 .btnQuinesSomos{
-    border-color:beige;
+    border-color:$colorSecundario;
     transition:box-shadow 0.2s ease-in-out;
     width: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -201,7 +204,7 @@ body{
 }
 
 .btnQuinesSomos:hover{
-    box-shadow: 1 1 20px  beige inset;
+    box-shadow: 1 1 20px  $colorSecundario inset;
 }
 
 .aplicarMargenSuperioInferiorAside{
@@ -209,17 +212,17 @@ body{
 }
 
 .colorFuenteAside{
-    color: beige;
+    color: $colorSecundario;
 }
 
  .botoneraMenuNavegacion{
-    border: 1px solid beige;
+    border: 1px solid $colorSecundario;
     width: 140px;
     height: 60;
     margin-top: 40px;
     list-style: none;
     text-decoration: none;
-    color: beige;    
+    color: $colorSecundario;    
 }
 
 li{
@@ -230,10 +233,10 @@ li{
     list-style: none;
     font-weight: bold;
     text-decoration:none;
-    color: beige;
+    color: $colorSecundario;
 }
 
 a{
     text-decoration: none;
-    color: beige;
+    color: $colorSecundario;
 }

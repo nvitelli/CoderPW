@@ -39,12 +39,10 @@
 .Tarjeta{
     width: 200px;
     height: 155px;
-    /* background-color: beige;  */
     position: relative;
     transform-style: preserve-3d;
     transition: 0.7s ease;
-    /* border-radius: 20%; */
-    background-color: beige;
+    background-color: $colorSecundario;
     margin: 10px;
 }   
 

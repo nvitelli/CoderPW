@@ -53,9 +53,15 @@
 }
 .aplicarFlexBoxRow{
     flex-direction:row;
-    justify-content:center;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
     justify-items: center;
+}
+
+.aplicarFlexBoxRowOptions{
+    flex-direction:row;
+    justify-content:end
+
 }
 
 .aplicarFlexBoxColumn{
@@ -124,7 +130,7 @@
 }
 /*clase para aplicar un color especifico a un fondo*/
 .body{
-    background-color:cornflowerblue;
+    background-color:$colorPrincipal;
 }
 /*clase para aplicar una familia de fuentes*/
 .fuenteExterna{
@@ -167,7 +173,6 @@
 .tamanioSeccionProductos{
     width: 250px;
     padding: 10px;
-    /* background-color: beige; */
 }
 
 .tamanioImagenRentabilidad{
@@ -224,5 +229,5 @@ li:hover{
 }
 
 .border {
-    border: 1px solid beige;
+    border: 1px solid $colorSecundario;
 }

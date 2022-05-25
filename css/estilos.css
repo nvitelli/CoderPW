@@ -84,7 +84,7 @@
 
 /*Clase para aplicar estilo al cuadrante del titulo principal*/
 .estiloTituloPrincipal {
-  background-color: #6495ed;
+  background-color: $colorPrincipal;
   background-size: 80px;
   height: 98px;
 }
@@ -123,9 +123,9 @@
   list-style: none;
 }
 
-/*clase para aplicar un color especifico a un fondo*/
+/*clase para aplicar un color especifico a un fondo de sección*/
 .body {
-  background-color: cornflowerblue;
+  background-color: $colorPrincipal;
 }
 
 /*clase para aplicar una familia de fuentes*/
